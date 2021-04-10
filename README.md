@@ -1,4 +1,4 @@
-XGEEKS Code Challenge
+interviewCalendarAPI Code Challenge
 
 Author: Giuseppe Fregapane Pires - giuseppefpires@gmail.com
 
@@ -11,7 +11,7 @@ In order to build and run the solution you will need JDK 8+ and Maven installed.
  - Through a terminal go to the main directory of the source and run the commands:
  - `mvn clean package `
  - `java -jar target/XgeeksProject-0.0.1-SNAPSHOT.jar`
- - In the root  of the sistem i put the file ApiXGEEKS.postman_collection.json that can be import into postman with some examples of requests.Feel free to use if you want.
+ - In the root  of the sistem i put the file interviewCalendarAPI.postman_collection.json that can be import into postman with some examples of requests.Feel free to use if you want.
 
 ### Design Decisions
 - For this Rest Application, i used spring boot to facilitate the creation of the api
@@ -52,7 +52,7 @@ I also based in on SOLID principles, decoupling classes, referencing interfaces/
  
 
 
-XGeeksApplication
+InterviewCalendarAPApplication
 This is the main class (main method).
 
 
