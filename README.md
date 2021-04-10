@@ -1,27 +1,58 @@
-# xgeeks tech assignment
+XGEEKS Code Challenge
 
-In this repo you can find the tech challenge we use to evaluate our candidates as part of the interview process. The idea is to approach back-end development.
+Author: Giuseppe Fregapane Pires - giuseppefpires@gmail.com
 
-Here, you can find the designated assignment details to be evaluated:
-- [ASSIGNMENT](assignment.md)
+### Description
+This is an Interview Calendar application where the user can see the matching date(s) between a candidate and one or more interviewers. 
 
->When delivering the assignments, the closer to production ready it is, the better.
-It's a great plus if you make our job of reviewing the challenge easier by virtualizing/containerizing it so that it runs smoothly on any machine and also give detailed instructions on how to run it.
+### Building and Running
+In order to build and run the solution you will need JDK 8+ and Maven installed. Then, follow the steps: 
+ - Clone the repository
+ - Through a terminal go to the main directory of the source and run the commands:
+ - `mvn clean package `
+ - `java -jar target/XgeeksProject-0.0.1-SNAPSHOT.jar`
+ - In the root  of the sistem i put the file ApiXGEEKS.postman_collection.json that can be import into postman with some examples of requests.Feel free to use if you want.
 
-We will discuss the project from a few different points:
+### Design Decisions
+- For this Rest Application, i used spring boot to facilitate the creation of the api
+- I use the H2 as a database to simplify the persistence layer.
+- No autentication and authorization was implemented.
+- I have created some extra endpoint(not required in the question description) but didnt provide test for them. I have only tested the main endpoints.
+- The way that i felt best suit this solution was to organized the code like the  MVC model.
 
-**Architecture**. You’re welcome to organize the code in a way that you believe suits best. Here, we’ll discuss possible alternatives and exchange a few ideas
+### The Algorithm 
+For every date i created an array where i will increase for ever inteval.
+Then after given a loop for eache user i will return the hours that match the sum of all users.
 
-**Engineering**. We’ll discuss this point based on the actual code: how it’s organized and written, if it’s easy to get picked up by a new engineer in a team (or in community, if we talk about open source). Of course it’s important that the code is readable, but we’ll go beyond that and talk about coherence of the codebase and its hypothetical (or potential) future.
+I also based in on SOLID principles, decoupling classes, referencing interfaces/abstract classes instead of child classes.
 
-**Tooling**. How does a completely unfamiliar user with basic technical background get the code and run it? What programs are expected to be available on user’s computer before installing the tool? How could that user potentially do a micro-deploy on their own machine?
+### Packages
 
-**Documentation**. Good code is one that documents itself, but sometimes it isn’t enough. We’ll discuss things such as quick start guide, code style and contribution guideline. It’s important that a new team member that joins the team and gets introduced to the codebase, or another team that develops integration, has a really good time exploring the code.
+##### Model
+ This package contains the application models.Users, Availability, Role, RequestInterview and ErroResponse are classes.
+ 
+##### Exception
+ This package contains the Exception classes of the api.Every exception that is throw is inside this package.
+ 
+##### Repository
+ This package contains the repository. The repository classes uses the H2 database.
+ 
+ ##### Service
+ This package contains the Interface and implementation of the service.
+ The class is responsible to provide the methods for the controller.
+ 
+##### Controller
+ This package contains the controller and the exception handler.
+ The controller provide the endpoins of the Api and the exception handler will handle all the exception of the sistem.
+ 
+##### Util
+ This package contains the UserHelper class.
+ This class help to validate the users.
+ 
+ 
 
-In order to do the assignment please use this repository and notify us when ready in order for us to evaluate the assignment and continue with the interview process.
 
-Remember, we are only building a team! There will be a lot of opportunities to learn and go through peer-driven quality review, so we care more about what knowledge and experience you bring to the team. Thank you for taking the time, and we are looking forward to our next interview that will follow up on this little project.
+XGeeksApplication
+This is the main class (main method).
 
-### In case of issues or doubts
 
-Please send an email to **career@xgeeks.io** and will get back to you as soon as possible
