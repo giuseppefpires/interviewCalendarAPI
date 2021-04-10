@@ -52,7 +52,7 @@ I also based in on SOLID principles, decoupling classes, referencing interfaces/
  
 
 
-InterviewCalendarAPApplication
+InterviewCalendarAPIApplication
 This is the main class (main method).
 
 
