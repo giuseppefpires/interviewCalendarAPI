@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/XGeeksProject/XgeeksProject.iml" filepath="$PROJECT_DIR$/XGeeksProject/XgeeksProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/be-assignment-gpires-development.iml" filepath="$PROJECT_DIR$/.idea/be-assignment-gpires-development.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interviewCalendarAPI/XgeeksProject.iml" filepath="$PROJECT_DIR$/interviewCalendarAPI/XgeeksProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/interviewCalendarAPI.iml" filepath="$PROJECT_DIR$/.idea/interviewCalendarAPI.iml" />
     </modules>
   </component>
 </project>
