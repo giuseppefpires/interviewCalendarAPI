@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/interviewCalendarAPI/XgeeksProject.iml" filepath="$PROJECT_DIR$/interviewCalendarAPI/XgeeksProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interviewCalendarAPI/InterviewCalendarAPI.iml" filepath="$PROJECT_DIR$/interviewCalendarAPI/InterviewCalendarAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/interviewCalendarAPI.iml" filepath="$PROJECT_DIR$/.idea/interviewCalendarAPI.iml" />
     </modules>
   </component>
